@@ -16,7 +16,7 @@ class Bot(ircbot.SingleServerIRCBot):
 	reponse =""
 	
 	def __init__(self):
-		ircbot.SingleServerIRCBot.__init__(self, [("irc.esgi-linuxlab.fr", 6667)],"Andre_Cabuzo", "Bot surveillant de trolling")
+		ircbot.SingleServerIRCBot.__init__(self, [("my_irc.fr", 6667)],"Andre_Cabuzo", "Bot surveillant de trolling")
 		self.salutations = ["Salut à toi ","Bien le bonjour, ","Salut ","Hey, ", "Coucou "]
 	def on_kick(self, serv, ev):
 		serv.join(Bot.chan_irc)
